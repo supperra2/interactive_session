@@ -33,6 +33,7 @@ jobs:
             cat <<'EOF' >> inputs.sh
             PATH=$HOME/pw:$PATH
             service_desktop="${{ inputs.service.desktop }}"
+            service_download_vncserver_container="true"
             service_novnc_parent_install_dir="${{ inputs.service.novnc_parent_install_dir }}"
             service_novnc_tgz_basename="${{ inputs.service.novnc_tgz_basename }}"
             service_nginx_sif="${{ inputs.service.nginx_sif_tag_existing }}"
